@@ -1,6 +1,6 @@
 # CompenHR
 ## Introduction
-This is PyTorch implementation of the paper CompenHR: Efficient Full Compensation for High-resolution Projector.
+This is PyTorch implementation of the paper “CompenHR: Efficient Full Compensation for High-resolution Projector”.
 
 ## Usage
    1. Clone this repo:
