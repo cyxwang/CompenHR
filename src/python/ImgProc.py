@@ -1,7 +1,6 @@
 import numpy as np
 import cv2 as cv
 
-# find the projector FOV mask for CompenNet++/CompenNeSt++
 def thresh(im_in):
     # threshold im_diff with Otsu's method
     if im_in.ndim == 3:
