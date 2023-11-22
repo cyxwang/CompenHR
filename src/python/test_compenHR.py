@@ -31,7 +31,7 @@ loss_list = ['l1+l2+ssim']
 
 # You can also compare different configurations, such as different number of training images and loss functions as shown below
 
-model_list = ['CompenHD' ] #
+model_list = ['CompenHR' ] #
 
 # default training options
 train_option_default = {'max_iters': 1,
@@ -112,7 +112,7 @@ for data_name in data_list:
                 if torch.cuda.device_count() >= 1: ga_net = nn.DataParallel(ga_net, device_ids=device_ids).to(device)
 
 
-                if model_name == 'CompenHD': 
+                if model_name == 'CompenHR': 
                     pa_net = Models.PANet()
                     if torch.cuda.device_count() >= 1: pa_net = nn.DataParallel(pa_net, device_ids=device_ids).to(device)
                     compen_hd = Models.CompenNeStPlusplusDUShuffleSA(ga_net, pa_net)
