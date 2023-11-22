@@ -15,5 +15,5 @@ This is PyTorch implementation of CompenHR.
 
    4. Run train_CompenHR.py to produce results:
       
-     python train_DeProCams.py
+     python train_CompenHR.py
 
