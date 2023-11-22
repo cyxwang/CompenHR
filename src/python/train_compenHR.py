@@ -1,7 +1,7 @@
 '''
-Training and testing script for CompenHD (journal extension of cvpr'19 and iccv'19 papers)
+Training and testing script for CompenHR
 
-This script trains/tests CompenHD on different dataset specified in 'data_list' below.
+This script trains/tests CompenHR on different dataset specified in 'data_list' below.
 The detailed training options are given in 'train_option' below.
 
 1. We start by setting the training environment to GPU (if any).
@@ -12,15 +12,15 @@ The detailed training options are given in 'train_option' below.
 6. Once the training is finished, we can compensate the desired image. The compensation images 'prj_cmp_test' can then be projected to the surface.
 
 Example:
-    python train_compenHD.py
+    python train_compenHR.py
 
-See Models.py for CompenHD structure.
+See Models.py for CompenHR structure.
 See trainNetwork.py for detailed training process.
 See utils.py for helper functions.
 
 Citation:
 
-    @inproceedings{wang2023compenhd,
+    @inproceedings{wang2023compenhr,
         author = {Yuxi Wang and Bingyao Huang and Haibin Ling},
         title = {CompenHR: Efficient Full Compensation for High-resolution Projector},
         booktitle = {IEEE Virtual Reality and 3D User Interfaces (VR)},
@@ -54,7 +54,7 @@ data_list = [
 ]
 loss_list = ['l1+l2+ssim']   
 num_train_list = [500]
-model_list = ['CompenHD'] 
+model_list = ['CompenHR'] 
 
 # default training options
 train_option_default = {'max_iters': 2000,
@@ -142,10 +142,10 @@ for data_name in data_list:
                 if torch.cuda.device_count() >= 1: ga_net = nn.DataParallel(ga_net, device_ids=device_ids).to(device)
                 
 
-                if model_name == 'CompenHD': 
+                if model_name == 'CompenHR': 
                     pa_net = Models.PANet()
                     if torch.cuda.device_count() >= 1: pa_net = nn.DataParallel(pa_net, device_ids=device_ids).to(device)
-                    compen_hd = Models.CompenHD(ga_net, pa_net)
+                    compen_hd = Models.CompenHR(ga_net, pa_net)
                     if torch.cuda.device_count() >= 1: compen_hd = nn.DataParallel(compen_hd, device_ids=device_ids).to(device)
                     if train_option['pretrain_csr'] !='':
                         print(train_option['pretrain_csr'])
