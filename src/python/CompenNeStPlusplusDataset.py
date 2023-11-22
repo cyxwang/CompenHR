@@ -1,6 +1,4 @@
-'''
-CompenNeSt++ dataset for data loader.
-'''
+
 
 import os
 from torch.utils.data import Dataset
