@@ -323,9 +323,9 @@ class GANet(nn.Module):
         x = F.grid_sample(x, fine_grid)
         return x
 
-class CompenHD(nn.Module):
+class CompenHR(nn.Module):
     def __init__(self, ga_net=None, pa_net=None):
-        super(CompenHD, self).__init__()
+        super(CompenHR, self).__init__()
         self.name = self.__class__.__name__
 
         # initialize from existing models or create new models
