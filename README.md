@@ -3,7 +3,7 @@
 This is PyTorch implementation of the paper“[CompenHR: Efficient Full Compensation for High-resolution Projector](http://arxiv.org/abs/2311.13409)”.
 
 ## Datasets
-Before running the code, please download the high resolution compensation datasets:
+The high resolution compensation datasets:
 
 [lavender](https://drive.google.com/file/d/1QA-vllN2RwV_bZOtBV7wYyG4CGyDwmpn/view?usp=sharing), 
 [bubble](https://drive.google.com/file/d/1zWalGpOGz2vzsYz1njHBGyiewiMh3Por/view?usp=sharing), 
