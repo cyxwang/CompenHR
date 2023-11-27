@@ -7,6 +7,8 @@ Before running the code, please download the high resolution compensation datase
 
 [lavender](https://drive.google.com/file/d/1QA-vllN2RwV_bZOtBV7wYyG4CGyDwmpn/view?usp=sharing), [bubble](https://drive.google.com/file/d/1zWalGpOGz2vzsYz1njHBGyiewiMh3Por/view?usp=sharing), [train,test,ref](https://drive.google.com/file/d/1ZBuVkH3XiBOOB4xZ_9I93SJEc4Q_Aufq/view?usp=sharing).
 
+[stripes_np](https://drive.google.com/file/d/1NgLxoLbS2jYuQ9SnSOVLzfZ-byQceQ98/view?usp=sharing).
+
 ## Usage
    1. Clone this repo:
   
