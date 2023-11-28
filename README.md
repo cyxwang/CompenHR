@@ -25,8 +25,10 @@ The high resolution compensation datasets:
      git clone https://github.com/cyxwang/CompenHR
      
      cd CompenHR/src/python
+
+   2. Download dataset and extract to ‘data/’
      
-   2. Start visdom by typing:
+   3. Start visdom by typing:
       
      visdom
 
