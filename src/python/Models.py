@@ -215,36 +215,6 @@ class GridRefine(nn.Module):
         return x+out
 
 
-    def __init__(self):
-        super(GridRefine, self).__init__()
-        self.name = self.__class__.__name__        
-        f = 32
-        self.conv1 = nn.Conv2d(2, f, kernel_size=3, stride=2, padding=1)
-        self.conv_f = nn.Conv2d(f, f, kernel_size=1)
-        self.conv2 = nn.Conv2d(f, f, kernel_size=3, stride=2, padding=1)
-       
-        self.transConv1 = nn.ConvTranspose2d(f, f, 3, 2, 1, 1)
-        self.transConv2 = nn.ConvTranspose2d(f, 2, 2, 2, 0)
-
-        self.sigmoid = nn.Sigmoid()
-        self.lrelu = nn.LeakyReLU(0.1)
-        self.relu = nn.ReLU(inplace=True)
-        def _initialize_weights(m):
-            if type(m) == nn.Conv2d:
-                nn.init.normal_(m.weight, 0, 1e-4)
-
-        self.apply(_initialize_weights)
-
-    def forward(self, x):
-        c1_ = self.relu(self.conv1(x))
-        c2 = self.relu(self.conv2(c1_))
-        
-        c3 = self.relu(self.transConv1(c2))
-        
-        cf = self.sigmoid(self.conv_f(c1_))
-        c4 = self.transConv2(c3*cf)
-        m = self.lrelu(c4)
-        return m+x
 
 class GANet(nn.Module):
     def __init__(self, grid_shape=(5, 5), out_size=(1024, 1024), with_refine=True):
