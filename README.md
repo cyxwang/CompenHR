@@ -16,6 +16,7 @@ The high resolution compensation datasets:
 [bubble](https://drive.google.com/file/d/1zWalGpOGz2vzsYz1njHBGyiewiMh3Por/view?usp=sharing), 
 [cube](https://drive.google.com/file/d/1um2sTthxT-3h1UNgfuoi3zpx93XrtgV4/view?usp=sharing), 
 [cloud](https://drive.google.com/file/d/1eBVzFfYCo2KotwvXL0TrmZeZBfN0-rcu/view?usp=drive_link),
+[curve](https://pan.baidu.com/s/1gLd9oCL40OvHoVsu3awfqA?pwd=7was,https://pan.baidu.com/s/1nAvFh-p0Yf-M4-KHbTwkjw?pwd=7was,https://pan.baidu.com/s/1ykz3mm1K8U7wXvMImntBng?pwd=7was) 
 [stripes](https://drive.google.com/file/d/15g3UJKamldpWxdGupxUsqPuVMuIPZeAd/view?usp=sharing),
 [water](https://drive.google.com/file/d/1b1BgHos_Vz6ieq2YFXEySgqljL1o9IyO/view?usp=sharing), 
 [train,test,ref](https://drive.google.com/file/d/1ZBuVkH3XiBOOB4xZ_9I93SJEc4Q_Aufq/view?usp=sharing).
@@ -25,6 +26,7 @@ The high resolution compensation datasets:
 [flower_np](https://drive.google.com/file/d/1MW2PizScA_nbvGM8pMlYs9q1G9cZ-q7f/view?usp=drive_link),
 [rock_np](https://drive.google.com/file/d/1xS5LTsmD0L_le7mx1yb8OLkbq12rVF_q/view?usp=sharing), 
 [stripes_np](https://drive.google.com/file/d/1NgLxoLbS2jYuQ9SnSOVLzfZ-byQceQ98/view?usp=sharing).
+
 
 ## Usage
    1. Clone this repo:
