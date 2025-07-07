@@ -50,7 +50,26 @@ else:
 
 dataset_root = fullfile(os.getcwd(), '../../data/1024')
 data_list = [
-    'stripes_np/3',
+    # 'stripes_np/3',
+    ‘lavender/1',                    
+    'lavender/2',                    
+    'lavender/3',                    
+    'bubble/1',                      
+    'bubble/2',                      
+    'cloud/1',                       
+    'cloud/2',                       
+    'cloud/3',                       
+    'cubes/1',                       
+    'cubes/2',                       
+    'cubes/3',                       
+    'curve/1',                       
+    'curve/2',                       
+    'curve/3',                       
+    'stripes/1',                    
+    'stripes/2',                     
+    'stripes/3',                     
+    'water/1',                       
+    'water/2',                       
 ]
 loss_list = ['l1+l2+ssim']   
 num_train_list = [500]
